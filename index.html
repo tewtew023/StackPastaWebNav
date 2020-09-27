@@ -8,89 +8,104 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>Stack Pasta</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
 
-  <div class="d-flex" id="wrapper">
-
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Stack Pasta</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
+  </nav>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to Scrolling Nav</h1>
+      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+    </div>
+  </header>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About this page</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <ul>
+            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
           </ul>
         </div>
-      </nav>
-
-      <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
       </div>
     </div>
-    <!-- /#page-content-wrapper -->
+  </section>
 
-  </div>
-  <!-- /#wrapper -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Services we offer</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact us</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Pisit Kaewfung 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 
